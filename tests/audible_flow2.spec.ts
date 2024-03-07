@@ -1,7 +1,7 @@
 const { chromium } = require('playwright');
 import {test, expect} from '@playwright/test'
 
-test('View images, read descriptions', async({page}) =>{
+test('Search specific products by keyword', async({page}) =>{
     
 
     await page.goto('https://www.audible.com/');
