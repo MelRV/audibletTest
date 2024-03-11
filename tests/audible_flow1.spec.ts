@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('Login and log out test', async ({ page }) => {
   await page.goto('https://www.audible.com/');
   await page.getByRole('link', { name: 'Sign in' }).click();
   await page.getByLabel('Email or mobile phone number').click();
